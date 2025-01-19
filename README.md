@@ -2,5 +2,5 @@
 This is a simple calculator with ASCII interface
 
 Change logs:
-  v1.0:
-    The calculator was created
+ v1.0:
+  The calculator was created
