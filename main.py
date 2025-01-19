@@ -59,6 +59,7 @@ while True:
         number = input("\nYour number: ")
         
         if number == "reset":
+            example = ""
             cont = True
             break
         
@@ -81,6 +82,7 @@ while True:
         operator = input("\nYour operator: ")
         
         if operator == "reset":
+            example = ""
             cont = True
             break
             
