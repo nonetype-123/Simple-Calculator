@@ -57,34 +57,48 @@ print('Commands:\n"reset" - reset previously entered data\n"enter" - solve the c
 while True:
     while True:
         number = input("\nYour number: ")
+        
         if number == "reset":
             cont = True
             break
+        
+        # Checking for number suitability
+        
         try:
             number = float(number)
         except Exception as err:
             error()
             continue
+            
         example += str(number) 
         break
+        
     if cont == True:
         cont = False
         continue
+        
     while True:
         operator = input("\nYour operator: ")
+        
         if operator == "reset":
             cont = True
             break
+            
         elif operator == "enter":
             results = float(eval(example))
             ascii_interface()
             cont = True
             break
+
+        # Operator suitability check
+        
         elif operator not in operators:
             error()
             continue
+            
         example += operator
         break
+        
     if cont == True:
         cont = False
         continue
